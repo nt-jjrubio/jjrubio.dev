@@ -29,4 +29,9 @@ jobs:
     #- run: npm ci
     - run: npm i 
     - run: npm run build
+    - run: tar -cvf github-pages.tar  -C dist/jjrubiodev/browser .
+    
+    
+
+    
     #- run: npm test
