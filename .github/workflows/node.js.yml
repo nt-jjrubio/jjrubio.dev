@@ -30,8 +30,13 @@ jobs:
     - run: npm i 
     - run: npm run build
     - run: tar -cvf github-pages.tar  -C dist/jjrubiodev/browser .
-    
-    
+
+    - name: Upload artifact
+    - uses: actions/upload-artifact@v4
+      id: upload-artifact
+      with: 
+        name: site
+        path: github-pages.tar
 
     
     #- run: npm test
