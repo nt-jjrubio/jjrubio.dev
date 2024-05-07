@@ -32,8 +32,8 @@ jobs:
     - run: tar -cvf github-pages.tar  -C dist/jjrubiodev/browser .
 
     - name: Upload artifact
-    - uses: actions/upload-artifact@v4
-      id: upload-artifact
+      uses: actions/upload-artifact@v4
+      #id: upload-artifact
       with: 
         name: site
         path: github-pages.tar
