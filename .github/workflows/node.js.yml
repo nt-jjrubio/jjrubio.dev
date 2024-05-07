@@ -27,16 +27,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     #- run: npm ci
-    - run: npm i 
+    - run: npm i
     - run: npm run build
     - run: tar -cvf github-pages.tar  -C dist/jjrubiodev/browser .
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       #id: upload-artifact
-      with: 
-        name: site
+      with:
+        name: github-pages
         path: github-pages.tar
 
-    
+
     #- run: npm test
