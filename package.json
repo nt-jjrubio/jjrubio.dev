@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buildgh": "ng build --base-href /jjrubio.dev/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
