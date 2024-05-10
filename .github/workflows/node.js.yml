@@ -33,7 +33,7 @@ jobs:
         cache: 'npm'
     #- run: npm ci
     - run: npm i
-    - run: npm run build
+    - run: npm run buildgh
     - run: tar -cvf github-pages.tar  -C dist/jjrubiodev/browser .
 
     - name: Upload artifact
